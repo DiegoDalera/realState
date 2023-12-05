@@ -1,0 +1,31 @@
+.listingContainer {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.listingCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.propertyCard {
+    width: 30%;
+    background-color: var(--bs-white);
+    box-shadow: var(--primary-box-shadow);
+    margin-top: 20px;
+}
+
+.propertythumb{
+    width: 100%;
+}
+
+.propertyImg{
+    width: 100%;
+}

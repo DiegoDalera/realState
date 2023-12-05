@@ -1,0 +1,20 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:rgb(255, 255, 255)
+}
+
+.navbar-logo img {
+    height: 50px; 
+}
+
+.navbar-buttons button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
