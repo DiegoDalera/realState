@@ -1,14 +1,17 @@
 .agentsContainer{
-    width: 90%;
+    width: 100%;
     min-height: 80vh;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    margin: auto;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
    
 }
 
 .agentsCards{
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,6 +23,10 @@
 .agentCard{
     width: 25%;
     background-color: var(--bs-white);
-    box-shadow: var(--primary-box-shadow);
+    box-shadow: 0 10px 31px 0 rgb(7 152 255 / 9%);
     margin-top: 20px;
+}
+
+.agentImg{
+    width:100%
 }

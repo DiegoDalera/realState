@@ -107,7 +107,7 @@ const properties = [
       "Chimenea",
     ],
     agente: {
-      nombre: "Elizabeth Keen",
+      nombre: "Randy Cool",
       imagen: "agente4.jpg",
     },
     caracteristicas: {

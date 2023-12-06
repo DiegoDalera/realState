@@ -1,0 +1,24 @@
+.contactContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.innercontactContainer{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftColumn{
+    width: 70%;
+}
+
+.rigthColumn{
+    width:30%
+}

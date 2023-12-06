@@ -1,20 +1,41 @@
-
 .navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; /* Fondo transparente inicialmente */
+    transition: background-color 0.3s ease; /* Animación de cambio de color */
+    z-index: 100; 
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color:rgb(255, 255, 255)
+    padding: 20px 20px;
+   
 }
 
-.navbar-logo img {
-    height: 50px; 
+.navbar.scrolling {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: sombra suave */
+  }
+  
+
+
+.btn-nav{
+ border: none;
+ background-color: transparent;
 }
 
 .navbar-buttons button {
+
     margin-left: 10px;
     padding: 5px 10px;
     cursor: pointer;
 }
 
-
+.headerwrapper {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 700;
+}

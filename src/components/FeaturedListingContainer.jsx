@@ -17,7 +17,7 @@ const FeaturedListingContainer = () => {
   return (
     <div className="listingContainer">
       <div className="listingHeader">
-        <h2 className="listingTitle">Our Featured Listing</h2>
+        <h2 className="listingTitle">Nuestras propiedades</h2>
       </div>
 
       <div className="listingCards">
@@ -30,8 +30,10 @@ const FeaturedListingContainer = () => {
                 className="propertyImg"
               />
             </div>
-            <h3>{propiedad.titulo}</h3>
-            <p>{propiedad.descripcion}</p>
+            <h3 className="title">{propiedad.titulo}</h3>
+            <p className="parrafo-cortado">{propiedad.descripcion}</p>
+            <p className="precio">{propiedad.price}</p>
+            <button className="btn-vermas">ver mas</button>
           </div>
         ))}
       </div>
