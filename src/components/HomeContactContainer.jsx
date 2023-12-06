@@ -1,8 +1,15 @@
-
 const HomeContactContainer = () => {
   return (
-    <div>HomeContactContainer</div>
-  )
-}
+    <div className="contactContainer">
+      <div className="contactTitle">
+        <h2>Contacatanos</h2>
+      </div>
 
-export default HomeContactContainer
+      <div className="leftColumn">left</div>
+
+      <div className="rigthColumn">rigth</div>
+    </div>
+  );
+};
+
+export default HomeContactContainer;

@@ -1,0 +1,65 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes_sociales {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.footer p {
+    color: white;
+    margin: 0px;
+}
+
+
+.redes_sociales a {
+    margin: 5px;
+}
+
+.footer-icon {
+    color: white;
+    font-size: 22px;
+}
+
+.footer-icon:hover {
+    color: rgb(255, 201, 0) !important;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
