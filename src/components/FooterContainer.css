@@ -8,12 +8,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-
+    padding: 15px;
 }
 
-
-
+.footer-widget{
+  width: 33%;
+}
 
 
 
@@ -24,7 +24,7 @@ ul {
     padding: 0px;
 }
 .footer-section {
-  background: #151414;
+  background: #1e224a;
   position: relative;
 }
 .footer-cta {
@@ -157,13 +157,13 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background: #202020;
+  background: rgb(28, 106, 222,0.93);
   padding: 25px 0;
 }
 .copyright-text p {
   margin: 0;
   font-size: 14px;
-  color: #878787;
+  color: #ffffff;
 }
 .copyright-text p a{
   color: #ff5e14;
@@ -177,5 +177,5 @@ ul {
 }
 .footer-menu li a {
   font-size: 14px;
-  color: #878787;
+  color: #ffffff;
 }
