@@ -1,8 +1,9 @@
 import "./FooterContainer.css";
 import {
-  Github,
+  Twitter ,
   Linkedin,
   Instagram,
+  Facebook ,
   GeoFill,
   PhoneFill,
   EnvelopeFill,
@@ -65,20 +66,20 @@ const FooterContainer = () => {
             </div>
 
             <div className="footer-widget">
-              
+
               <div className="footer-widget-heading">
-                <h3>Follow us</h3>
+                <h3>Nuestras redes</h3>
               </div>
 
               <div className="footer-social-icon">
                 <a href="#">
-                  <i className="fab fa-facebook-f facebook-bg"></i>
+                 <Facebook color="white" size={36}/>
                 </a>
                 <a href="#">
-                  <i className="fab fa-twitter twitter-bg"></i>
+                  <Twitter color="white" size={36}/>
                 </a>
                 <a href="#">
-                  <i className="fab fa-google-plus-g google-bg"></i>
+                  <Instagram color="white" size={36}/>
                 </a>
               </div>
 
@@ -86,12 +87,11 @@ const FooterContainer = () => {
 
             <div className="footer-widget">
               <div className="footer-widget-heading">
-                <h3>Subscribe</h3>
+                <h3>Suscribete</h3>
               </div>
               <div className="footer-text mb-25">
                 <p>
-                  Don’t miss to subscribe to our new feeds, kindly fill the form
-                  below.
+                  No te pierdas todos los ingresos. Suscribite dejandomos tu mail
                 </p>
               </div>
               <div className="subscribe-form">
