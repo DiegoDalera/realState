@@ -19,6 +19,11 @@
     flex-direction: row;
 }
 
+.nav-container{
+margin-bottom: 100px;
+
+}
+
 
 .header-title {
     
@@ -90,4 +95,9 @@
     color: #6c757d;
 
 
+}
+.inputrange{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
