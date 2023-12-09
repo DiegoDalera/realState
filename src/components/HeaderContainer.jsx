@@ -2,7 +2,29 @@ import NavContainer from "./NavContainer";
 import "./HeaderContainer.css";
 import { useState } from "react";
 
+import { useDispatch } from 'react-redux';
+import { setFiltroPropiedades } from '../redux/filtroPropiedadesSlice'; 
+
 const HeaderContainer = () => {
+
+  const dispatch = useDispatch();
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const formData = {
+    tipoOperacion,
+    tipoPropiedad,
+    ubicacion,
+    ambientes,
+    valorRango,
+  };
+
+  // Despacha una acción a Redux con los datos del formulario
+  
+  dispatch(setFiltroPropiedades(formData));
+};
+
   const [tipoOperacion, setTipoOperacion] = useState("");
   const [tipoPropiedad, setTipoPropiedad] = useState("");
   const [ubicacion, setUbicacion] = useState("");
@@ -29,17 +51,7 @@ const HeaderContainer = () => {
     setValorRango(event.target.value);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes manejar los datos del formulario, por ejemplo, enviarlos a una API o algo similar.
-    console.log({
-      tipoOperacion,
-      tipoPropiedad,
-      ubicacion,
-      ambientes,
-      valorRango,
-    });
-  };
+
 
   return (
     <header className="header">
@@ -80,8 +92,8 @@ const HeaderContainer = () => {
                 onChange={handleTipoPropiedadChange}
               >
                 <option className="formOption">Tipo de Propiedad</option>
-                <option className="formOption">Casa</option>
-                <option className="formOption">Departamento</option>
+                <option className="formOption">Casas</option>
+                <option className="formOption">Departamentos</option>
               </select>
             </div>
 
