@@ -3,6 +3,8 @@ import { createSelector } from "@reduxjs/toolkit";
 // Selector base para obtener todas las propiedades del estado
 export const selectPropiedades = (state) => state.propiedades.propiedades;
 
+
+
 // Selector para obtener una lista de agentes únicos
 export const selectUniqueAgentes = createSelector(
   [selectPropiedades],

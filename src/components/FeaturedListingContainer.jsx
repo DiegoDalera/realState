@@ -13,7 +13,8 @@ const FeaturedListingContainer = () => {
   }, [dispatch]);
 
   const propiedades = useSelector((state) => state.propiedades.propiedades);
-
+  console.log("propiedades en home ", propiedades);
+  
   return (
     <div className="listingContainer">
       <div className="listingHeader">

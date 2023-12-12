@@ -9,6 +9,7 @@ const propiedadesSlice = createSlice({
   initialState,
   reducers: {
     setPropiedades(state, action) {
+      console.log('Action payload: propiedades', action.payload); 
       state.propiedades = action.payload;
     },
   },

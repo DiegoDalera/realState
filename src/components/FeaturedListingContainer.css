@@ -36,25 +36,39 @@
     width: 100%;
 }
 
+
+.title{
+    margin: 5px;
+}
+
 .parrafo-cortado {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    margin: 5px;
 }
 
 .precio {
     color: #1b69df;
     font-weight: 700;
+    margin: 5px;
 }
 
 .btn-vermas{
     background-color: #1b69df;
     color: white;
-    outline: none;
     border: none;
     border-radius: 2px;
     padding: 8px 8px;
     cursor: pointer;
-    position: absolute;
+}
+
+.btn-vermas:hover{
+    background-color: #ffffff;
+    color: #1b69df;
+    border:1px solid #1b69df;
+    border-radius: 2px;
+    padding: 8px 8px;
+    cursor: pointer;
 }
