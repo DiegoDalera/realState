@@ -1,7 +1,6 @@
 import "./FooterContainer.css";
 import {
   Twitter ,
-  Linkedin,
   Instagram,
   Facebook ,
   GeoFill,

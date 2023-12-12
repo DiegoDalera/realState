@@ -20,7 +20,6 @@ const handleSubmit = (event) => {
     valorRango,
   };
 
-  // Despacha una acción a Redux con los datos del formulario
   
   dispatch(setFiltroPropiedades(formData));
 };
@@ -61,12 +60,9 @@ const handleSubmit = (event) => {
 
       <div className="header-container">
         <div className="header-title">
-          <h1> La propiedad de tus sueños</h1>
+          <h1> Todos buscamos nuestro lugar en el mundo</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            consequuntur voluptatem hic vero, quos aperiam omnis reprehenderit
-            ducimus, tempora magnam quo quibusdam numquam. Debitis mollitia sit
-            nobis. Nostrum, sit at.
+          Conocé las propiedades más destacadas del mercado. La mejor y más exclusiva selección de propiedades en venta y alquiler.
           </p>
         </div>
 

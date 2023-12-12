@@ -1,20 +1,20 @@
 import "./FeaturedAgentsContainer.css";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 import { setAgentes } from "../redux/agentesSlice";
 
+import { Linkedin } from "react-bootstrap-icons";
 
 const FeaturedAgentsContainer = () => {
   const agentes = useSelector((state) => state.agentes.agentes);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    
-    fetch("https://randomuser.me/api/?results=5") // Obtener 5 agentes
+    fetch("https://randomuser.me/api/?results=5")
       .then((response) => response.json())
       .then((data) => {
-        const agentesTransformados = data.results.map(agenteApi => ({
+        const agentesTransformados = data.results.map((agenteApi) => ({
           id: agenteApi.login.uuid,
           nombre: `${agenteApi.name.first} ${agenteApi.name.last}`,
           imagen: agenteApi.picture.large,
@@ -41,8 +41,12 @@ const FeaturedAgentsContainer = () => {
                 className="agentImg"
               />
             </div>
-            <h3>{agente.nombre}</h3>
-            <p>{agente.nombre}</p>
+            <div className="agentData">
+              <h3>{agente.nombre}</h3>
+              <a href="#">
+                <Linkedin color="black" size={28} />
+              </a>
+            </div>
           </div>
         ))}
       </div>

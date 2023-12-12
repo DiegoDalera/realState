@@ -8,12 +8,16 @@ const HomeContactContainer = () => {
           <h2>Contacatanos</h2>
         </div>
         <div className="contactSection">
-          <div className="leftColumn">left</div>
+          <div className="leftColumn">
+            <p>
+              Nuestros Brokers Inmobiliarios son profesionales capacitados para
+              brindar un servicio personalizado y de excelencia en tasación de
+              inmuebles.
+            </p>
+          </div>
 
           <div className="rigthColumn">
-
             <form className="form_Container">
-
               <div className="form_FormGroup">
                 <input
                   type="text"
@@ -53,7 +57,7 @@ const HomeContactContainer = () => {
                 <input
                   type="submit"
                   className="formSubmitInput"
-                  value="Send Message"
+                  value="Enviar Mensaje"
                 ></input>
               </div>
             </form>
