@@ -28,7 +28,7 @@ const FooterContainer = () => {
               <div className="cta-text">
                 <PhoneFill color="white" size={36} />
                 <h4>Telefono</h4>
-                <span>+051 117654321</span>
+                <span>+051 55555555</span>
               </div>
             </div>
 
@@ -49,7 +49,7 @@ const FooterContainer = () => {
               <div className="footer-logo">
                 <a href="index.html">
                   <img
-                    src="https://i.ibb.co/QDy827D/ak-logo.png"
+                    src="../../public/dd-logo.png"
                     className="img-fluid"
                     alt="logo"
                   ></img>
@@ -110,7 +110,7 @@ const FooterContainer = () => {
         <div className="container">
           <div className="footer-row">
             <div className="copyright-text">
-              <p>Copyright &copy; 2018, All Right Reserved </p>
+              <p>Copyright &copy; 2023, All Right Reserved </p>
             </div>
 
             <div className="footer-menu">
