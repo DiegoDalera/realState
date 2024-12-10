@@ -2,27 +2,29 @@ import NavContainer from "./NavContainer";
 import "./HeaderContainer.css";
 import { useState } from "react";
 
-import { useDispatch } from 'react-redux';
-import { setFiltroPropiedades } from '../redux/filtroPropiedadesSlice'; 
+import { useDispatch } from "react-redux";
+import { setFiltroPropiedades } from "../redux/filtroPropiedadesSlice";
+import { useNavigate } from "react-router-dom";
 
 const HeaderContainer = () => {
+  const navigate = useNavigate();
+  //navigate(-1) => flecha ed navegacion para atras
 
   const dispatch = useDispatch();
 
-const handleSubmit = (event) => {
-  event.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
-  const formData = {
-    tipoOperacion,
-    tipoPropiedad,
-    ubicacion,
-    ambientes,
-    valorRango,
+    const formData = {
+      tipoOperacion,
+      tipoPropiedad,
+      ubicacion,
+      ambientes,
+      valorRango,
+    };
+    dispatch(setFiltroPropiedades(formData));
+    navigate("/search");
   };
-
-  
-  dispatch(setFiltroPropiedades(formData));
-};
 
   const [tipoOperacion, setTipoOperacion] = useState("");
   const [tipoPropiedad, setTipoPropiedad] = useState("");
@@ -50,8 +52,6 @@ const handleSubmit = (event) => {
     setValorRango(event.target.value);
   };
 
-
-
   return (
     <header className="header">
       <div className="nav-container">
@@ -62,7 +62,8 @@ const handleSubmit = (event) => {
         <div className="header-title">
           <h1> Todos buscamos nuestro lugar en el mundo</h1>
           <p>
-          Conocé las propiedades más destacadas del mercado. La mejor y más exclusiva selección de propiedades en venta y alquiler.
+            Conocé las propiedades más destacadas del mercado. La mejor y más
+            exclusiva selección de propiedades en venta y alquiler.
           </p>
         </div>
 

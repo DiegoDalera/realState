@@ -17,6 +17,7 @@ const HomeContactContainer = () => {
           </div>
 
           <div className="rigthColumn">
+            
             <form className="form_Container">
               <div className="form_FormGroup">
                 <input

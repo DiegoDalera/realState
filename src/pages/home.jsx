@@ -14,7 +14,7 @@ const home = () => {
       <FeaturedAgentsContainer />
       <HomeContactContainer />
       <FooterContainer />
-      {/* <Outlet />  */}
+   
     </div>
   );
 };

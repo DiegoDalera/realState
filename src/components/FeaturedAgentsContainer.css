@@ -1,5 +1,5 @@
 .agentsContainer {
-    width: 90%;
+    width:100%;
     min-height: 80vh;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -10,8 +10,6 @@
 
 }
 
-
-
 .listingAgentsHeader {
     width: 100%;
     display: flex;
@@ -19,7 +17,6 @@
     justify-content: flex-start;
     align-items: flex-start;
 }
-
 
 .agentsCards {
     width: 90%;
